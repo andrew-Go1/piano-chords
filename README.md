@@ -1,79 +1,22 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Overview
 
-# Getting Started
+<img src="https://github.com/user-attachments/assets/2620e67d-ffd1-4919-baf9-d7b78e09114f" alt="Wide Presentation" width="600">
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+There is result of my familiarity with `react-native` library. Before I start, I set up some goals for this project:
+- improve my knowlage about React components;
+- create ready-to-use product within a small amount of time;
+- create small-size app (becouse react-native have bropblem with boundle size);
 
-## Step 1: Start the Metro Server
+I deside to create an app, that could help beginer piano learner with accent on real life practice. That idea took me when I try to play piano by chords, but don't really know correct keys for every chords.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+---
+For minimazing app size I deside NOT to use any static images. Instead, I manually create vector `.svg` files.
+First of all, I explore some background. That's how I know, that keys on piano have different size. It look something like that:
 
-To start Metro, run the following command from the _root_ of your React Native project:
+![clavier5](https://github.com/user-attachments/assets/ac5e5024-3093-4702-b72e-0d6e1179403a)
 
-```bash
-# using npm
-npm start
+So, I create [black](https://github.com/andrew-Go1/piano-chords/blob/main/src/components/atoms/keyB.js) and [white](https://github.com/andrew-Go1/piano-chords/blob/main/src/components/atoms/keyW.js) keys and create a custom polygon path for different types.
 
-# OR using Yarn
-yarn start
-```
+---
 
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+It took me one and half of week to implement basic functionality and upload app to PlayMarket. (*Unfortunately, account was blocked due to updated Google politics*)
